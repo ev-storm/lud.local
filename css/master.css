@@ -1,0 +1,77 @@
+@import url('font.css');
+@import url('menu.css');
+
+
+:root {
+	--black: #222222;
+	--gray: #B6B7B7;
+	--tran_03: all 0.3s ease-out;
+	--tran_05: all 0.5s;
+}
+body{
+	font-family:'Tranforma', sans-serif;
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	color: #ffffff;
+	background: rgb(47,47,47);
+	background: -webkit-radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
+	background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
+	background: -moz-radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f2f",endColorstr="#0e0e0e",GradientType=1);
+}
+
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit; /* Наследует цвет текста родителя, можно также указать конкретный цвет */
+}
+
+*{
+	cursor: auto;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 2200px;
+	height: 100vh;
+}
+
+.btn{
+	border-style: none;
+	padding: 2px 30px 0px 30px;
+	font-size: 18px;
+	border-radius: 6px;
+	font-family:'Tranforma', sans-serif;
+	font-weight: 400;
+	cursor: pointer;
+
+
+  background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
+  animation: gradientAnimation 5s ease-in-out infinite;
+	background: -moz-linear-gradient(173deg, rgba(95,193,255,1) 0%, rgba(24,92,149,1) 89%);
+	background: -webkit-linear-gradient(173deg, rgba(95,193,255,1) 0%, rgba(24,92,149,1) 89%);
+	background: linear-gradient(173deg, rgba(95,193,255,1) 0%, rgba(24,92,149,1) 89%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fc1ff",endColorstr="#185c95",GradientType=1);
+}
+
+.btn:hover{
+	background: rgb(95,193,255);
+	background: -moz-linear-gradient(173deg, rgba(95,193,255,1) 47%, rgba(24,92,149,1) 100%);
+	background: -webkit-linear-gradient(173deg, rgba(95,193,255,1) 47%, rgba(24,92,149,1) 100%);
+	background: linear-gradient(173deg, rgba(95,193,255,1) 47%, rgba(24,92,149,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fc1ff",endColorstr="#185c95",GradientType=1);
+	transition: var(--tran_05);
+}
+
+.btn:focus{
+	background: rgb(74,149,196);
+	background: -moz-linear-gradient(173deg, rgba(74,149,196,1) 0%, rgba(24,92,149,1) 54%);
+	background: -webkit-linear-gradient(173deg, rgba(74,149,196,1) 0%, rgba(24,92,149,1) 54%);
+	background: linear-gradient(173deg, rgba(74,149,196,1) 0%, rgba(24,92,149,1) 54%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a95c4",endColorstr="#185c95",GradientType=1);
+	transition: var(--tran_05);
+}
+
