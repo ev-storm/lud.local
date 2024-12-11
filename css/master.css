@@ -1,24 +1,34 @@
 @import url('font.css');
 @import url('menu.css');
+@import url('home.css');
 
 
 :root {
-	--black: #222222;
 	--gray: #B6B7B7;
 	--tran_03: all 0.3s ease-out;
-	--tran_05: all 0.5s;
+	--tran_05:  all 0.5s ease-in-out;
 }
+.element::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
 body{
 	font-family:'Tranforma', sans-serif;
 	display: flex;
 	justify-content: center;
 	font-weight: 400;
 	color: #ffffff;
-	background: rgb(47,47,47);
-	background: -webkit-radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
-	background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
-	background: -moz-radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(14,14,14,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f2f",endColorstr="#0e0e0e",GradientType=1);
+	background: rgb(46,46,46);
+	background: -moz-radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
+	background: -webkit-radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
+	background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2e2e",endColorstr="#111111",GradientType=1);
 }
 
 a {

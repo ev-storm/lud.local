@@ -23,12 +23,18 @@
 	</div>
 
 	<div class="burger-con">
-		<img src="/assets/svg/burger.svg" alt="burger">
-		<img src="/assets/svg/close_burger.svg" alt="close_burger">
+		<img class="burger" src="/assets/svg/burger.svg" alt="burger">
+		<img class="burger-close" src="/assets/svg/close_burger.svg" alt="close_burger">
 	</div>
 
 
 </div>
+
+
+
+
+
+
 
 <div class="mob_menu">
 
