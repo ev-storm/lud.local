@@ -4,7 +4,7 @@
 	</div>
 	<div class="nav-con">
 		<div class="menu-btn">
-			<button class="btn">связаться с нами</button>
+			<button class="btn trigger">связаться с нами</button>
 			<div class="cont-btn">
 				<a href="#"><img src="/assets/svg/wapp.svg" alt="whatsapp"></a>
 				<a href="#"><img src="/assets/svg/tg.svg" alt="telegram"></a>
@@ -21,7 +21,7 @@
 		</div>
 	
 	</div>
-
+	
 	<div class="burger-con">
 		<img class="burger" src="/assets/svg/burger.svg" alt="burger">
 		<img class="burger-close" src="/assets/svg/close_burger.svg" alt="close_burger">
@@ -42,6 +42,9 @@
 		<a href="#"><img src="/assets/svg/logo.svg" alt=""></a>
 	</div>
 
+
+
+
 	<div class="nav">
 		<a href="#">Продать фирму</a><br>
 		<a href="#"> Купить фирму </a><br>
@@ -49,7 +52,7 @@
 	</div>
 
 	<div class="menu-btn">
-		<button class="btn">связаться с нами</button>
+		<button class="btn trigger">связаться с нами</button>
 		<div class="cont-btn">
 			<a href="#"><img src="/assets/svg/wapp.svg" alt="whatsapp"></a>
 			<a href="#"><img src="/assets/svg/tg.svg" alt="telegram"></a>

@@ -4,6 +4,7 @@
 	align-items: center;
 	height: 100vh;
 	width: 100%;
+	z-index: 1;
 }
 .title{
 	width: 60%;
@@ -14,115 +15,240 @@
 	width: auto;
 	height: 100vh;
 } 
+.title-con .mob-btn{
+	display: none;
+}
+.title-con .desc-btn{
+	display: flex;
+}
 .title-img img{
+	position: relative;
 	width: auto;
-	height: 100vh;
+	height: 90vh;
+	margin-top: 10vh;
+	z-index: 2;
+} 
+.title-img .back{
+	position: absolute;
+	top: 0;
+	right: 0;
+	filter: blur(80px);
+	z-index: 1;
+	opacity: 0.5;
 } 
 .title h1{
-	font-size: 70px;
+	font-size: var(--title);
 	font-weight: 400;
 	line-height: 1.2;
 	margin-top: 10%;
 }
 .title h2{
-	font-size: 16px;
+	font-size: var(--h2);
 	color: var(--gray);
 	font-weight: 400;
 	margin: 5% 0 8% 0;
 }
 
 
-.way-con{
+
+
+
+
+.way-con {
+	position: relative;
 	width: 100%;
 	height: 500px;
 	display: flex;
-	transition: var(--tran_05) 
+	transition: all 0.8s ease-out;
+	z-index: 2;
 }
+
 .way {
-  flex: 1; 
-  transition: var(--tran_05) 
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	transition: all 0.8s ease-out;
 }
 
 .way:hover {
-  flex: 4;
-	transition: var(--tran_05) 
+	flex: 4;
+	transition: all 0.8s ease-out;
 }
 
 .way-con:hover .way:not(:hover) {
-  flex: 3;
-	transition: var(--tran_05) 
+	flex: 3;
+	transition: all 0.8s ease-out;
 }
 
-.buy{
+.buy, .cell, .liq {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
 	cursor: pointer;
-	transition: var(--tran_05)
-}
-.cell{
-	width: 50%;
-	height: 100%;
-	background-image: url(/assets/img/cell.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; 
-	cursor: pointer;
-	transition: var(--tran_05)
-}
-.liq{
-	width: 25%;
-	height: 100%;
-	background-image: url(/assets/img/liq.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; 
-	cursor: pointer;
-	transition: var(--tran_05)
-}
-
-
-.way {
-	position: relative;
-	height: 100%;
-	overflow: hidden; /* Обрезает любые элементы, выходящие за границы */
+	transition: var(--tran_05);
 }
 
 .buy::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover; 
-	background-position: center; 
-	transition: var(--tran_05);
 	background-image: url(/assets/img/buy.png);
-	z-index: -1; 
 }
+
 .cell::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover; 
-	background-position: center; 
-	transition: var(--tran_05);
 	background-image: url(/assets/img/cell.png);
-	z-index: -1; 
 }
-
-
-
 
 .liq::before {
 	background-image: url(/assets/img/liq.png);
 }
 
-/* Применение фильтра при наведении */
+.way::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	filter: brightness(40%);
+	transition: var(--tran_05);
+	cursor: pointer;
+}
+
 .way:hover::before {
-	filter: brightness(40%); 
+	filter: brightness(20%);
+}
+
+.way h1 {
+	font-weight: 400;
+	margin-top: 50px;
+	cursor: pointer;
+	font-size: clamp(10px, 2.5vw, 40px);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.way h2, .way h3 {
+	font-weight: 400;
+	font-size: var(--h2);
+	color: var(--gray);
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.way h2 {
+	margin-top: 5%;
+	width: 500px;
+	line-height: 1.8;
+	font-weight: 500;
+	margin-top: 10%;
+}
+
+.way a h3 {
+	margin-top: 20px;
+	transition: all 0.2s;
+}
+
+.way a h3:hover {
+	color: #ffffff;
+}
+
+.way:hover h2, .way:hover h3 {
+	opacity: 1;
+}
+
+.way img {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.way-text div {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.way:hover img {
+	opacity: 0;
+}
+
+.way:hover .way-text {
+	transform: translateY(-60px);
+	transition: all 0.5s ease-in-out;
+}
+.way-text {
+	transform: translateY(50px);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	width: 70%;
+}
+
+
+
+@media (max-width: 600px) {
+
+	.way-con {
+		flex-direction: column;
+		height: 800px;
+	}
+	.way-text {
+		margin-top: 20%;
+	}
+	.title-img{
+		position: absolute;
+	}
+	.title{
+		width: 100%;
+		padding: 0 0 0 10%;
+	}
+	.title h2 {
+		width: 59%;
+		margin-top: 10%;
+	}
+	.way h2 {
+    margin-top: 15%;
+    width: 300px;
+}
+	.title-img img {
+		position: absolute;
+		height: 63vh;
+		transform: translate(60%, 43%);
+	}
+	.title-img .back {
+    left: 0;
+}
+	.way h1 {
+		font-weight: 400;
+		margin-top: 20px;
+		font-size: clamp(30px, 2.5vw, 40px);
+		line-height: 1.2;
+		text-align: center;
+	}
+	.way:hover {
+		flex: 2;
+	}
+	
+	.way-con:hover .way:not(:hover) {
+		flex: 1;
+	}
+	.title-con .mob-btn{
+		display: flex;
+		position: relative;
+		z-index: 99;
+	}
+	.title-con .desc-btn{
+		display: none;
+	}
+	.mob-paragraph{
+		display: none;
+	}
+	.title h1{
+		margin-top: 20%;
+	}
+
+
 }

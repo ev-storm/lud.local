@@ -90,7 +90,7 @@
 	.burger-con{
 		display: flex;
 	}
-	.burger-con img{
+	.burger-con{
 		position: absolute;
 		right: 5%;
 		top: 30%;
@@ -99,6 +99,7 @@
 		padding: 5%;
 		position: fixed;
 		top: 0;
+		width: 100vw;
 	}
 	.logo a img{
 		height: 40px;
@@ -108,6 +109,9 @@
 		flex-direction: column;
 	}
 
+	.nav{
+		margin: 0 0 0 10%;
+	}
 
 
 	
@@ -130,7 +134,7 @@
 
 	
 	.mob_menu.active{
-		transform: translateX(0);
+		transform: translateX(-20%);
 		transition: var(--tran_03);
 	}
 	

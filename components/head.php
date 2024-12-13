@@ -7,11 +7,11 @@
 
 	<link rel="stylesheet" href="css/master.css">
 	<script defer src="/js/main.js"></script>
+	<script defer src="/js/modal.js"></script>
 
-	<!-- <script src="libs/jquery-3.7.1.min.js"></script>
-	<script src="libs/inputmask.min.js"></script>
-	<script src="libs/just-validate3.3.3.min.js"></script> -->
-
+	<!-- <script src="libs/jquery-3.7.1.min.js"></script> -->
+	<script src="/js/inputmask.min.js"></script>
+	<script src="/js/just-validate3.3.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
 	<!-- SEO -->
