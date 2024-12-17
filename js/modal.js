@@ -153,18 +153,6 @@ validation
 					}, 3000);
 					
 
-					// $('.modal-over').fadeOut(600);
-					// $('.modal-con').fadeOut(400);
-					// $('.modal-con').css({
-					// 	'transform': 'translateY(-100%)',
-					// 	'transition': '0.7s',
-					// 	'opacity':'0'
-					// })
-
-
-					// $('.banner__mail').removeClass('hide');
-					// $('.banner__mail').addClass('show');
-
 				
 				}
 			}

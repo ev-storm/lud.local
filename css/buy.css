@@ -1,0 +1,222 @@
+
+.line{
+	background-color: #ffffff70;
+	height: 2px;
+	width: 80%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-left: 10%;
+}
+.david-img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.block_1 {
+	margin: 100px 0;
+	padding: 0 10%;
+}
+.block_1 h1{
+	font-size: var(--h1);
+	font-weight: 400;
+}
+.block_1 h2{
+	font-size: var(--h2);
+	color: var(--gray);
+	font-weight: 400;
+}
+.block_1 h2 span{
+	font-size: var(--h2);
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 2;
+}
+
+.title-buy h2{
+	font-size: clamp(16px, 1.5vw, 20px);
+}
+
+
+.block_2{
+	display: flex;
+	align-items: center;
+}
+.block_2 img{
+	width: auto;
+	height: 480px;
+	box-shadow: var(--shadow);
+	border-radius: 10px;
+}
+.block_2 .text-con{
+	background-color: #00000050;
+	height: 430px;
+	width: 100%;
+	padding: 5% 8%;
+}
+.block_3{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 20%;
+	margin: 100px 0;
+}
+.block_3 div{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.block_3 div div{
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+.block_3 div h1{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.block_3 div h2{
+	font-size: 16px;
+}
+.list{
+	padding: 0 10%;
+}
+.list-item{
+	display: flex;
+	padding: 25px 0;
+	align-items: center;
+	transition: var(--tran_03);
+}
+.comment-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.block_5{
+	padding: 2% 0;
+}
+.comment-star{
+	display: flex;
+	align-items: center;
+}
+.comment-star h1{
+	font-size: 70px;
+	margin-right: 20px;
+}
+/* .block_4-item {
+	display: flex;
+	padding: 25px 0;
+	align-items: center;
+	transition: var(--tran_03);
+} */
+.list-item h1{
+	font-size: 20px;
+}
+.list-item img{
+	margin: 0 40px;
+}
+.list-item:hover{
+	background-color: #00000050;
+	border-radius: 10px;
+	transition: var(--tran_03);
+}
+.block_5{
+	background-color: #00000050;
+	width: 100%;
+	height: 600px;
+	margin: 100px 0;
+}
+
+.block_7{
+	background-color: #00000050;
+	width: 100%;
+	height: 600px;
+	margin: 100px 0;
+}
+
+.block_8{
+	padding: 0 10% 5% 10%;
+}	
+
+
+/* ------------------------------------------------- */
+.comment-swiper {
+  width: 100%;
+  height: 330px;
+}
+.comment-slide{
+	background-color: #ffffff10;
+	width: 300px;
+	border-radius: 10px;
+	padding: 2%;
+}
+.com-title{
+	display: flex;
+}
+.com-title{
+	display: flex;
+}
+.com-img{
+	border-radius: 500px;
+	width: 80px;
+	height: 80px;
+	margin-right: 30px;
+}
+.date-name h1{
+	font-size: 20px;
+}
+.com-content{
+	font-size: 12px;
+	margin-top: 20px;
+}
+.com-content a span{
+	color: #ffffff;
+	cursor: pointer;
+}
+.card-title{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+	align-items: center;
+}
+.card-title div h1{
+	font-size: var(--h11);
+}
+.card-con{
+	padding: 0 10%;
+}
+.block_7{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.card-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.card{
+	background-image: url(/assets/img/card-back.svg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+	width: 400px;
+	border-radius: 10px;
+	padding: 30px 30px 30px 30px;
+	margin-top: 30px;
+}
+.card h1{
+	margin-bottom: 30px;
+}
+.card .btn{
+	width: 100%;
+	margin-top: 30px;
+}
+.card-btn_con{
+	width: 70%;
+	height: 100%;
+	background-color: #ffffff40;
+}

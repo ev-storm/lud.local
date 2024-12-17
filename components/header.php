@@ -1,6 +1,6 @@
 <div class="menu">
 	<div class="logo">
-		<a href="#"><img src="/assets/svg/logo.svg" alt=""></a>
+		<a href="/"><img src="/assets/svg/logo.svg" alt=""></a>
 	</div>
 	<div class="nav-con">
 		<div class="menu-btn">

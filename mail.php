@@ -38,7 +38,7 @@ try {
 	$mail->SMTPSecure = 'ssl';
 	$mail->Port       = 465;
 
-	$mail->setFrom('insight.studio2023@gmail.com', 'City-Stroy'); // Адрес самой почты и имя отправителя
+	$mail->setFrom('insight.studio2023@gmail.com', 'Надёжные Люди'); // Адрес самой почты и имя отправителя
 
 	// Получатель письма
 	$mail->addAddress('insight.studio2023@gmail.com');

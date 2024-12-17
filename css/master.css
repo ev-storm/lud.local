@@ -2,6 +2,7 @@
 @import url('menu.css');
 @import url('home.css');
 @import url('modal.css');
+@import url('buy.css');
 
 :root {
 	--gray: #B6B7B7;
@@ -9,8 +10,10 @@
 	--tran_05:  all 0.5s ease-in-out;
 	--title:clamp(40px, 4vw, 70px);
 	--btn:clamp(16px, 1.58vw, 20px);
-	--h1:clamp(20px, 2.5vw, 30px);
-	--h2:clamp(12px, 1vw, 16px);
+	--h1:clamp(20px, 2.5vw, 40px);
+	--h11:clamp(12px, 2vw, 20px);
+	--h2:clamp(12px, 1.5vw, 16px);
+	--shadow: #000000 0 0 40px;
 }
 .element::-webkit-scrollbar {
   width: 0;
@@ -36,10 +39,20 @@ body{
 	background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2e2e",endColorstr="#111111",GradientType=1);
 }
+h1{
+	font-size: var(--h1);
+	font-weight: 400;
+}
+h2{
+	font-size: var(--h2);
+	font-weight: 400;
+	color: var(--gray);
+	line-height: 1.7;
+}
 
 a {
-  text-decoration: none; /* Убирает подчеркивание */
-  color: inherit; /* Наследует цвет текста родителя, можно также указать конкретный цвет */
+  text-decoration: none;
+  color: inherit;
 }
 
 *{
@@ -88,4 +101,56 @@ a {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a95c4",endColorstr="#185c95",GradientType=1);
 	transition: var(--tran_05);
 }
+.footer{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00000050;
+	padding: 25px 10%;
+}
+.footer-item{
+	display: flex;
+}
+.footer-item h2{
+	font-size: 12px;
+}
+.footer-logo{
+	width: 55px;
+	margin-right: 30px;
+}
+.f-btn{
+	display: flex;
+	flex-direction: column;
+}
+.f-btn a h2{
+	cursor: pointer;
+	transition: var(--tran_03);
 
+}
+.f-btn a h2:hover{
+	color: #ffffff;
+	transition: var(--tran_03);
+}
+.footer-item span{
+	color: #ffffff;
+}
+.i{
+	height: 60px;
+	width: 1px;
+	background-color: #ffffff;
+	opacity: 0.5;
+}
+.footer-btn a{
+	margin: 0 10px;
+	opacity: 0.5;
+	cursor: pointer;
+	transition: var(--tran_03);
+}
+.footer-btn a img{
+	cursor: pointer;
+}
+.footer-btn a:hover{
+	opacity: 1;
+	transition: var(--tran_03);
+}
