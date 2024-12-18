@@ -12,6 +12,7 @@
 
 		</div>
 		<form class="form" action="">
+			<input class="company-card" type="text" name="Заявка на фирму" readonly>
 			<input class="input-tel" type="tel" name="Телефон" placeholder="Введите номер телефона">
 			
 			<button class="btn btn-modal" disabled>Отправить</button>

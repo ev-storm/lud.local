@@ -33,6 +33,35 @@ burgerClose.addEventListener('click', function(event) {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+	const modalCon = document.querySelector('.modal-con');
+	const modalClose = document.querySelector('.modal-close');
+	const body = document.body;
+	const companyCardInput = document.querySelector('.company-card');
+	const phoneInput = document.querySelector('.input-tel');
+
+	// Функция для добавления класса .back с задержкой
+	function addBackClassWithDelay() {
+			setTimeout(function() {
+					if (modalCon.classList.contains('active')) {
+							modalCon.classList.add('back');
+					}
+			}, 100); // Задержка 100 миллисекунд
+	}
+
+	// Делегирование событий для кнопок trigger
+	document.addEventListener('click', function(event) {
+			if (event.target.classList.contains('trigger')) {
+					const dataValue = event.target.getAttribute('data');
+					console.log(dataValue);
+
+					// Установка значения dataValue в .company-card
+					companyCardInput.value = dataValue;
+			}
+	});
+});
+
+
 
 
 
@@ -60,7 +89,6 @@ burgerClose.addEventListener('click', function(event) {
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-
 document.addEventListener("DOMContentLoaded", function() {
 	const triggers = document.querySelectorAll('.trigger');
 	const modalCon = document.querySelector('.modal-con');
@@ -76,13 +104,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			}, 100); // Задержка 100 миллисекунд
 	}
 
-	triggers.forEach(trigger => {
-			trigger.addEventListener('click', function() {
+	// Делегирование событий для кнопок triggers
+	document.addEventListener('click', function(event) {
+			if (event.target.classList.contains('trigger')) {
 					modalCon.classList.remove('inactive');
 					modalCon.classList.add('active');
 					body.classList.add('blur');
 					addBackClassWithDelay();
-			});
+			}
 	});
 
 	modalClose.addEventListener('click', function() {
@@ -100,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 	});
 });
+
 
 ////////////////////////////////////////////////////////////
 
@@ -158,7 +188,7 @@ validation
 			}
 		}
 
-		xhr.open('POST', 'mail.php', true);
+		xhr.open('POST', '../mail.php', true);
 		xhr.send(formData);
 
 		event.target.reset();

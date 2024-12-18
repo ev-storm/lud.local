@@ -32,9 +32,9 @@
 	<div class="i"></div>
 
 	<div class="footer-item f-btn">
-		<a href="#"><h2>Юридические данные организации</h2></a> 
-		<a href="#"><h2>Политика конфиденциальности</h2></a> 
-		<a href="#"><h2>Открыть в картах</h2></a>
+		<a href="/pages/assent.php"><h2>Юридические данные организации</h2></a> 
+		<a href="/pages/assent.php"><h2>Политика конфиденциальности</h2></a> 
+		<a href="https://yandex.ru/maps/org/nadezhnyye_lyudi/27956121875/reviews/?ll=37.617700%2C55.755874&utm_content=add_review&utm_medium=reviews&utm_source=maps-reviews-widget&z=9" target="_blank"><h2>Открыть в картах</h2></a>
 	</div>
 
 	<div class="i"></div>

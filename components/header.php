@@ -13,11 +13,11 @@
 			</div>
 		</div>
 		<div class="nav">
-			<a href="#">Продать фирму</a>
+			<a href="/pages/buy.php">Продать фирму</a>
 			<span>|</span>
-			<a href="#"> Купить фирму </a>
+			<a href="/pages/buy.php"> Купить фирму </a>
 			<span>|</span>
-			<a href="#">Ликвидировать фирму</a>
+			<a href="/pages/buy.php">Ликвидировать фирму</a>
 		</div>
 	
 	</div>

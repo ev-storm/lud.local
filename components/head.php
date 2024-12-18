@@ -8,6 +8,7 @@
 
 	<script defer src="../js/main.js"></script>
 	<script defer src="../js/modal.js"></script>
+	<script defer src="../js/cards.js"></script>
 
 	<!-- <script src="libs/jquery-3.7.1.min.js"></script> -->
 	<script src="../js/inputmask.min.js"></script>

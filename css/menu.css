@@ -101,6 +101,9 @@
 		top: 0;
 		width: 100vw;
 	}
+	.menu:hover{
+		background-color: #ffffff00;
+	}
 	.logo a img{
 		height: 40px;
 	}

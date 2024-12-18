@@ -72,17 +72,17 @@
 	position: relative;
 	height: 100%;
 	overflow: hidden;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .way:hover {
 	flex: 4;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .way-con:hover .way:not(:hover) {
 	flex: 3;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .buy, .cell, .liq {
@@ -116,7 +116,7 @@
 	background-position: center;
 	z-index: -1;
 	filter: brightness(40%);
-	transition: var(--tran_05);
+	transition: all 1s ease-in-out;
 	cursor: pointer;
 }
 
@@ -125,26 +125,30 @@
 }
 
 .way h1 {
+	display: flex;
+	justify-content: center;
 	font-weight: 400;
 	margin-top: 50px;
 	cursor: pointer;
 	font-size: clamp(10px, 2.5vw, 40px);
 	line-height: 1.2;
-	text-align: center;
+	transition: all 1s ease-in-out;
+	width: 100%;
 }
+
 
 .way h2, .way h3 {
 	font-weight: 400;
 	font-size: var(--h2);
 	color: var(--gray);
 	opacity: 0;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 	cursor: pointer;
 }
 
 .way h2 {
 	margin-top: 5%;
-	width: 100%;
+	width: 500px;
 	max-width: 500px;
 	min-width: 300px;
 	line-height: 1.8;
@@ -167,7 +171,7 @@
 
 .way img {
 	opacity: 1;
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 .way-text div {
 	display: flex;
@@ -178,19 +182,24 @@
 	opacity: 0;
 }
 
+
 .way:hover .way-text {
 	transform: translateY(-60px);
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 .way-text {
 	transform: translateY(50px);
-	transition: all 0.5s ease-in-out;
+	transition: all 1s ease-in-out;
 	cursor: pointer;
 	width: 70%;
 }
+@media (max-width: 1600px) {
+.way h2 {
 
+	width: 400px;
 
-
+}
+}
 @media (max-width: 600px) {
 
 	.way-con {
