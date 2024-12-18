@@ -9,6 +9,7 @@
 	<script defer src="../js/main.js"></script>
 	<script defer src="../js/modal.js"></script>
 	<script defer src="../js/cards.js"></script>
+	<script defer src="../js/svg.js"></script>
 
 	<!-- <script src="libs/jquery-3.7.1.min.js"></script> -->
 	<script src="../js/inputmask.min.js"></script>
@@ -20,8 +21,8 @@
 	
 
 	<!-- SEO -->
-	<!-- <meta name="keywords" content="теги СЕО"> -->
+	<meta name="keywords" content="теги СЕО">
 	<!-- fav -->
-	<!-- <link type="Image/x-icon" href="/assets/icons/fav.ico" rel="icon"> -->
+	<link type="Image/x-icon" href="/assets/svg/fav.ico" rel="icon">
 
 </head>

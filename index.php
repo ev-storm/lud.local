@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <?php include "components/head.php"?>
-<title>Главная</title>
+<title>НЛ | Главная</title>
 
 <body>
 	<?php include "components/header.php"?>

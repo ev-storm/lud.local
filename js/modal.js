@@ -180,7 +180,7 @@ validation
 
 					setTimeout(() => {
 						sendСheck.classList.remove('active');
-					}, 3000);
+					}, 4000);
 					
 
 				

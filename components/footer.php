@@ -21,12 +21,14 @@
 
 	<div class="i"></div>
 
-	<div class="footer-item">
-		<h2>
-			Адрес: <span>г. Москва,</span><br>
-			улица: <span>Рублевское шоссе,</span> <br>
-			дом: <span>48, офис 18</span>
-		</h2>
+	<div class="footer-item map">
+		<a href="https://yandex.ru/maps/org/nadezhnyye_lyudi/27956121875/reviews/?ll=37.617700%2C55.755874&utm_content=add_review&utm_medium=reviews&utm_source=maps-reviews-widget&z=9" target="_blank">
+			<h2>
+				Адрес: <span>г. Москва,</span><br>
+				Улица: <span>Пресненская наб.,</span> <br>
+				Дом: <span>8 стр. 1, этаж 7, офис 21</span>
+			</h2>
+		</a>
 	</div>
 
 	<div class="i"></div>
