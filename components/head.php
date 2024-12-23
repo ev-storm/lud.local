@@ -10,6 +10,7 @@
 	<script defer src="../js/modal.js"></script>
 	<script defer src="../js/cards.js"></script>
 	<script defer src="../js/svg.js"></script>
+	<script defer src="../js/catalog.js"></script>
 
 	<!-- <script src="libs/jquery-3.7.1.min.js"></script> -->
 	<script src="../js/inputmask.min.js"></script>

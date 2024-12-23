@@ -46,9 +46,9 @@
 
 
 	<div class="nav">
-		<a href="#">Продать фирму</a><br>
-		<a href="#"> Купить фирму </a><br>
-		<a href="#">Ликвидировать фирму</a>
+		<a href="/pages/cell.php">Продать фирму</a><br>
+		<a href="/pages/buy.php"> Купить фирму </a><br>
+		<a href="/pages/liq.php">Ликвидировать фирму</a>
 	</div>
 
 	<div class="menu-btn">

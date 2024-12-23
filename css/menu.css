@@ -16,7 +16,7 @@
 	width: 100%;
 	max-width: 2200px;
 	padding: 30px 50px 0px 50px;
-	z-index: 3;
+	z-index: 99;
 	transition: var(--tran_05)
 }
 .menu:hover{

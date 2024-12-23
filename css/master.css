@@ -5,16 +5,17 @@
 @import url('buy.css');
 @import url('liq.css');
 @import url('cell.css');
+@import url('catalog.css');
 
 :root {
 	--gray: #B6B7B7;
 	--tran_03: all 0.3s ease-out;
 	--tran_05:  all 0.5s ease-in-out;
-	--title:clamp(40px, 4vw, 70px);
-	--btn:clamp(16px, 1.58vw, 20px);
-	--h1:clamp(20px, 2.5vw, 40px);
-	--h11:clamp(12px, 2vw, 20px);
-	--h2:clamp(12px, 1.5vw, 16px);
+	--title:55px;
+	--btn:20px;
+	--h1:30px;
+	--h11:22px;
+	--h2:16px;
 	--shadow: #00000070 0 0 40px;
 }
 .element::-webkit-scrollbar {
@@ -35,13 +36,12 @@ body{
 	color: #ffffff;
 	transition: var(--tran_03);
 
+	background: rgb(18,18,18);
+background: -moz-radial-gradient(circle, rgba(18,18,18,1) 22%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(18,18,18,1) 22%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(18,18,18,1) 22%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121212",endColorstr="#000000",GradientType=1);
 
-
-	background: rgb(46,46,46);
-	background: -moz-radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
-	background: -webkit-radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
-	background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(17,17,17,1) 53%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2e2e",endColorstr="#111111",GradientType=1);
 	background-attachment: fixed;
 }
 h1{
@@ -52,7 +52,7 @@ h2{
 	font-size: var(--h2);
 	font-weight: 400;
 	color: var(--gray);
-	line-height: 1.7;
+	line-height: 1.8;
 }
 
 a {
@@ -72,6 +72,13 @@ a {
 	max-width: 2200px;
 	height: 100vh;
 }
+button{
+	background-color: transparent;
+	border-style: none;
+	color: #ffffff;
+	font-family:'Tranforma', sans-serif;
+	font-weight: 400;
+}
 
 .btn{
 	border-style: none;
@@ -81,6 +88,7 @@ a {
 	font-family:'Tranforma', sans-serif;
 	font-weight: 400;
 	cursor: pointer;
+	color: #000000;
 
 	background: -moz-linear-gradient(173deg, rgba(95,193,255,1) 0%, rgba(24,92,149,1) 89%);
 	background: -webkit-linear-gradient(173deg, rgba(95,193,255,1) 0%, rgba(24,92,149,1) 89%);
@@ -188,4 +196,22 @@ a {
 }
 .footer-item.map a h2{
 	cursor: pointer;
+}
+.assent-text h2 {
+	line-height: 1.8;
+}
+.assent-text h2 span{
+	font-size: 30px;
+	color: #ffffff;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+.assent-con{
+	padding: 10%;
+}
+.assent-con div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5%;
 }

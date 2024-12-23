@@ -27,19 +27,20 @@
 }
 
 .title-buy h2{
-	font-size: clamp(16px, 1.5vw, 20px);
-	margin: 5% 0;
+	font-size: var(--h2);
+	margin: 9% 0;
+	width: 60%;
 }
 .title-buy {
-	width: 76%;
-	padding: 0 0 0 10%;
+	width: 100%;
+	padding: 0 0 0 15%;
 }
-.title-buy h1{
+/* .title-buy h1{
 	font-size: var(--title);
 	font-weight: 400;
 	line-height: 1.2;
 	margin-top: 10%;
-}
+} */
 
 
 
@@ -124,6 +125,7 @@
 	margin: 0 40px;
 }
 .list-item svg{
+	width: fit-content;
 	margin: 0 40px;
 }
 .list-item:hover{
@@ -141,10 +143,12 @@
 .block_7{
 	background-color: #00000050;
 	width: 100%;
-	height: 600px;
+	height: fit-content;
 	margin: 100px 0;
 }
-
+.card-content{
+	margin-bottom: 20px;
+}
 .block_8{
 	padding: 0 10% 5% 10%;
 }	
@@ -209,15 +213,18 @@
 	padding: 0 5%;
 }
 .card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-image: url(/assets/img/card-back.svg);
 	background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-	width: fit-content;
+	width: 480px;
+	height: 440px;
 	border-radius: 10px;
 	padding: 30px 30px 30px 30px;
 	margin-right: 20px;
-	min-width: 480px;
 	transition: var(--tran_03);
 }
 .card h1{
@@ -234,12 +241,17 @@
 	width: 70%;
 	height: 95%;
 }
-
+.cell_b4-1{
+	width: 200px;
+}
 
 .next-prev-con button{
 	background-color: #ffffff00;
 	border-style: none;
 	cursor: pointer;
+}
+.next-prev-con button:active{
+	scale: 0.9;
 }
 .card-next-prev-con button{
 	background-color: #ffffff00;
@@ -262,6 +274,7 @@
 	justify-content: end;
 	align-items: center;
 	padding: 0 10%;
+	transform: translateY(-30px);
 }
 .next-prev-con{
 	width: 100%;
@@ -376,18 +389,126 @@
 
 .list-item {
 	flex-direction: column;
+	padding: 25px;
+	box-shadow: #00000090 0 0 15px;
+	border-radius: 10px;
+	margin: 10px 0;
 }
+.block_3{
+	flex-direction: column;
+}
+
 .list{
-	padding: 0	2%;
+	padding: 0 2%;
 }
-.list div{
-	padding: 5%;
+.swiper-slide{
+	padding: 30px;
 }
+.list h1{
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.list-item div h2 {
+	opacity: 0;
+	transform: translateY(-50px);
+	height: 0;
+	transition: all 1s ease-in-out;
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+.list-item:hover div h2 {
+	opacity: 1;
+	transform: translateY(0px);
+	height: 100%;
+	transition: all 0.8s ease-in-out;
+}
+
+.list-item div h1{
+	font-size: 18px;
+}
+
+
+
 
 
 .list-item svg {
 	height: auto;
-	width: 200px;
+	width: 130px;
+	transition: var(--tran_05);
 }
+.list-item:hover svg {
+	height: auto;
+	width: 200px;
+	transition: var(--tran_05);
+}
+.title h1{
+	font-size: 35px;
+}
+
+.block_2{
+	flex-direction: column;
+}
+.block-img img{
+	width: 100%;
+	height: auto;
+}
+
+.block-img .text-con{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.comment-title{
+	flex-direction: column;
+	padding: 10%;
+}
+.footer{
+	flex-direction: column;
+	align-items: center;
+	padding: 10% 18%;
+}
+.footer-item h2{
+	width: 300px;
+}
+.footer-item {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+}
+.i {
+	height: 1px!important;
+	width: 90%!important;
+	margin: 10%;
+}
+
+.f-btn a {
+	margin: 10px 0;
+}
+
+.card-title {
+	padding: 15% 5% 5% 5%;
+}
+.card-con{
+	flex-direction: column;
+}
+.card{
+	width: 80vw;
+	height: 100%;
+	margin: 0;
+}
+.card-con {
+	justify-content: center;
+	align-items: center;
+}
+.card-btn_con {
+	width: 110%;
+}
+.card-next-prev-con {
+	padding: 10%;
+}
+
 
 }

@@ -40,22 +40,21 @@ document.addEventListener("DOMContentLoaded", function() {
 	const companyCardInput = document.querySelector('.company-card');
 	const phoneInput = document.querySelector('.input-tel');
 
-	// Функция для добавления класса .back с задержкой
 	function addBackClassWithDelay() {
 			setTimeout(function() {
 					if (modalCon.classList.contains('active')) {
 							modalCon.classList.add('back');
 					}
-			}, 100); // Задержка 100 миллисекунд
+			}, 100); 
 	}
 
-	// Делегирование событий для кнопок trigger
+
 	document.addEventListener('click', function(event) {
 			if (event.target.classList.contains('trigger')) {
 					const dataValue = event.target.getAttribute('data');
 					console.log(dataValue);
 
-					// Установка значения dataValue в .company-card
+
 					companyCardInput.value = dataValue;
 			}
 	});
@@ -95,16 +94,16 @@ document.addEventListener("DOMContentLoaded", function() {
 	const modalClose = document.querySelector('.modal-close');
 	const body = document.body;
 
-	// Функция для добавления класса .back с задержкой
+
 	function addBackClassWithDelay() {
 			setTimeout(function() {
 					if (modalCon.classList.contains('active')) {
 							modalCon.classList.add('back');
 					}
-			}, 100); // Задержка 100 миллисекунд
+			}, 100);
 	}
 
-	// Делегирование событий для кнопок triggers
+
 	document.addEventListener('click', function(event) {
 			if (event.target.classList.contains('trigger')) {
 					modalCon.classList.remove('inactive');
@@ -120,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			body.classList.remove('blur');
 	});
 
-	// Закрыть модальное окно по клику вне его
+
 	modalCon.addEventListener('click', function(event) {
 			if (event.target === modalCon) {
 					modalCon.classList.add('inactive');
@@ -218,4 +217,37 @@ checkbox.addEventListener('change', function() {
 				button.disabled = true;
 				button.classList.remove('active');
 		}
+});
+
+
+
+
+
+///////////////----PRELOADER-----/////////////////
+function hidePreloader() {
+	var preloader = document.getElementById('preloader');
+
+	preloader.style.display = 'none';
+
+	$('.menu').css({
+		'opacity': 1,
+		'transition': 'all 1s ease-out',
+		'transform': 'translateY(0vw)',
+	})
+	
+	setTimeout(function() {
+		$('.title__text').css({
+				'opacity': 1,
+				'transition': 'all 1s ease-out',
+				'transform': 'translateY(0vw)',
+		});
+	}, 1000);
+}
+
+let timeoutId = setTimeout(hidePreloader, 3000);
+
+
+window.addEventListener('load', function() {
+	clearTimeout(timeoutId);
+	hidePreloader();
 });
