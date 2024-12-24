@@ -15,15 +15,12 @@
 			<input class="company-card" type="text" name="Заявка на фирму" readonly>
 			<input class="input-tel" type="tel" name="Телефон" placeholder="Введите номер телефона">
 			
-			<button class="btn btn-modal" disabled>Отправить</button>
-
-			<div class="modal__check-con">
-				<input id="modal__check" type="checkbox">
-				<label  type="checkbox"  class="modal__check-text" for="modal__check">
-					<span class="modal__check"></span>
-					Согласие на обработку данных
-					<a href="/pages/assent.php"><img class="modal__check-que" src="/assets/svg/que.svg" alt=""></a>
-				</label>
+			<button class="btn btn-modal">Отправить</button>
+			<div class="assent-span">
+				<a href="/pages/assent.php">
+					<span>Согласие на обработку данных</span>
+					<img class="modal__check-que" src="/assets/svg/que.svg" alt="">
+				</a>
 			</div>
 		</form>
 	</div>
@@ -42,3 +39,26 @@
 </div>
 
 <link rel="stylesheet" href="../css/preloader.css">
+
+
+
+<!-- 
+///////////////////////////////// -->
+
+
+
+
+
+<div class="modal_qr-con">
+	<div class="modal_qr">
+		<div class="qr-img-con">
+			<img class="qr-img" src="/assets/svg/qr-w.svg" alt="">
+			<div>
+				<img src="/assets/svg/wapp.svg" alt="">
+				<a href="https://api.whatsapp.com/send/?phone=79776640495&text&type=phone_number&app_absent=0" target="_blank"><button class="btn">перейти</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+

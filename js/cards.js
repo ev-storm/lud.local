@@ -132,7 +132,7 @@ function setActiveButton(activeButton) {
 function updateCardInfo(company) {
 	const card = document.querySelector('.card');
 	card.innerHTML = `
-			<h1>${company.name}</h1>
+			<h1 class="title-card">${company.name}</h1>
 			<h2>${company.location}</h2>
 			<h2>Выручка:<br>
 							<span>${company.proceeds_1}</span><br>

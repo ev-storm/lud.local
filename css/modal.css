@@ -26,13 +26,7 @@
 	-o-backdrop-filter: blur(10px);
 }
 
-.modal-con.active.back{
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	-moz-backdrop-filter: blur(10px);
-	-ms-backdrop-filter: blur(10px);
-	-o-backdrop-filter: blur(10px);
-}
+
 
 
 .modal{
@@ -44,7 +38,6 @@
 	border-radius: 10px;
 	box-shadow: #000000 0 0 40px;
 	padding: 40px 60px;
-	
 	background: rgb(31,31,31);
 	background: -moz-linear-gradient(173deg, rgba(31,31,31,1) 23%, rgba(14,14,14,1) 100%);
 	background: -webkit-linear-gradient(173deg, rgba(31,31,31,1) 23%, rgba(14,14,14,1) 100%);
@@ -152,11 +145,114 @@
 
 
 
-
-
 .modal-con.inactive {
 	animation: fadeOut 0.5s forwards;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal_qr-con.inactive {
+	animation: fadeOut 0.5s forwards;
+}
+
+.modal_qr-con{
+	display: none;
+	transition: var(--tran_03);
+	transform: translateY(-200px);
+	animation: fadeOut 0.5s forwards;
+}
+.modal_qr-con.active{
+	display: flex;
+	position: fixed;
+	top: 0;
+	transform: translateY(0px);
+	width: 100vw;
+	animation: fadeIn 0.5s forwards;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	transition: var(--tran_05);
+}
+
+.active{
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	-ms-backdrop-filter: blur(10px);
+	-o-backdrop-filter: blur(10px);
+}
+
+/* .modal_qr-con.active.back{
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	-ms-backdrop-filter: blur(10px);
+	-o-backdrop-filter: blur(10px);
+} */
+
+
+
+.modal_qr{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 600px;
+	height: 360px;
+	border-radius: 10px;
+	box-shadow: #000000 0 0 40px;
+	padding: 40px 60px;
+	
+	background: rgb(31,31,31);
+	background: -moz-linear-gradient(173deg, rgba(31,31,31,1) 23%, rgba(14,14,14,1) 100%);
+	background: -webkit-linear-gradient(173deg, rgba(31,31,31,1) 23%, rgba(14,14,14,1) 100%);
+	background: linear-gradient(173deg, rgba(31,31,31,1) 23%, rgba(14,14,14,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#0e0e0e",GradientType=1);
+} 
+
+
+
+
+
+.qr-img-con{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.qr-img-con div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10%;
+}
+.qr-img-con div button{
+margin-top: 15%;
+}
+.qr-img{
+	height: 100%;
+	width: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 @keyframes fadeIn {
 	0% {
@@ -186,18 +282,31 @@
 
 
 /* /////////////////////////////////////////////// */
-
-.btn-modal{
-	opacity: 0.5;
+.assent-span a span{
+	cursor: pointer;
+}
+.modal__check-que{
+	cursor: pointer;
+	position: absolute;
+	width: 15px;
+	margin-left: 10px;
+	transition: var(--tran_05);
+}
+.modal__check-que:hover{
+	scale: 1.2;
+	transition: all 0.2s ease-in;
+}
+/* .btn-modal{
+	opacity: 1;
 	transition: var(--tran_03);
 }
 
 .btn-modal.active{
 	opacity: 1;
 	transition: var(--tran_03);
-}
+} */
 
-
+/* 
 #modal__check {
 	position: absolute;
 	top: 0;
@@ -259,7 +368,7 @@
 #modal__check-btn:checked + .modal__check-text .modal__check-btn {
   content: "";
 	background-color: #ffffff
-}
+} */
 
 
 

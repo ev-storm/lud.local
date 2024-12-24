@@ -24,4 +24,16 @@
 
 
 
+	// 	function updateLink() {
+	// 		const link = document.querySelector('.way-mob');
+	// 		if (window.innerWidth < 600) {
+	// 				link.removeAttribute('href');
+	// 		} else {
+	// 				link.setAttribute('href', '/pages/cell.php');
+	// 		}
+	// }
 
+	// // Проверяем при загрузке страницы
+	// window.addEventListener('load', updateLink);
+	// // Проверяем при изменении размера окна
+	// window.addEventListener('resize', updateLink);

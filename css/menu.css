@@ -17,7 +17,8 @@
 	max-width: 2200px;
 	padding: 30px 50px 0px 50px;
 	z-index: 99;
-	transition: var(--tran_05)
+	transition: var(--tran_05);
+	backdrop-filter: blur(7px);
 }
 .menu:hover{
 	background-color: #00000070;

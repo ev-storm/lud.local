@@ -13,9 +13,9 @@
 			</div>
 		</div>
 		<div class="nav">
-			<a href="/pages/buy.php">Продать фирму</a>
+			<a href="/pages/cell.php">Продать фирму</a>
 			<span>|</span>
-			<a href="/pages/cell.php"> Купить фирму </a>
+			<a href="/pages/buy.php"> Купить фирму </a>
 			<span>|</span>
 			<a href="/pages/liq.php">Ликвидировать фирму</a>
 		</div>
@@ -46,8 +46,8 @@
 
 
 	<div class="nav">
-		<a href="/pages/cell.php">Продать фирму</a><br>
-		<a href="/pages/buy.php"> Купить фирму </a><br>
+		<a href="/pages/buy.php">Продать фирму</a><br>
+		<a href="/pages/cell.php"> Купить фирму </a><br>
 		<a href="/pages/liq.php">Ликвидировать фирму</a>
 	</div>
 

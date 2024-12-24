@@ -35,10 +35,9 @@ burgerClose.addEventListener('click', function(event) {
 
 document.addEventListener("DOMContentLoaded", function() {
 	const modalCon = document.querySelector('.modal-con');
-	const modalClose = document.querySelector('.modal-close');
-	const body = document.body;
+
 	const companyCardInput = document.querySelector('.company-card');
-	const phoneInput = document.querySelector('.input-tel');
+
 
 	function addBackClassWithDelay() {
 			setTimeout(function() {
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	document.addEventListener('click', function(event) {
 			if (event.target.classList.contains('trigger')) {
 					const dataValue = event.target.getAttribute('data');
-					console.log(dataValue);
 
 
 					companyCardInput.value = dataValue;
@@ -89,42 +87,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function() {
-	const triggers = document.querySelectorAll('.trigger');
+
 	const modalCon = document.querySelector('.modal-con');
 	const modalClose = document.querySelector('.modal-close');
-	const body = document.body;
 
 
-	function addBackClassWithDelay() {
-			setTimeout(function() {
-					if (modalCon.classList.contains('active')) {
-							modalCon.classList.add('back');
-					}
-			}, 100);
-	}
 
 
 	document.addEventListener('click', function(event) {
 			if (event.target.classList.contains('trigger')) {
 					modalCon.classList.remove('inactive');
 					modalCon.classList.add('active');
-					body.classList.add('blur');
-					addBackClassWithDelay();
 			}
 	});
 
 	modalClose.addEventListener('click', function() {
 			modalCon.classList.add('inactive');
-			modalCon.classList.remove('back');
-			body.classList.remove('blur');
+
 	});
 
 
 	modalCon.addEventListener('click', function(event) {
 			if (event.target === modalCon) {
 					modalCon.classList.add('inactive');
-					modalCon.classList.remove('back');
-					body.classList.remove('blur');
 			}
 	});
 });
@@ -206,18 +191,18 @@ validation
 
 
 
-const checkbox = document.getElementById('modal__check');
-const button = document.querySelector('.btn-modal');
+// const checkbox = document.getElementById('modal__check');
+// const button = document.querySelector('.btn-modal');
 
-checkbox.addEventListener('change', function() {
-		if (this.checked) {
-				button.disabled = false;
-				button.classList.add('active');
-		} else {
-				button.disabled = true;
-				button.classList.remove('active');
-		}
-});
+// checkbox.addEventListener('change', function() {
+// 		if (this.checked) {
+// 				button.disabled = false;
+// 				button.classList.add('active');
+// 		} else {
+// 				button.disabled = true;
+// 				button.classList.remove('active');
+// 		}
+// });
 
 
 
@@ -251,3 +236,83 @@ window.addEventListener('load', function() {
 	clearTimeout(timeoutId);
 	hidePreloader();
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+	const modalQrCon = document.querySelector('.modal_qr-con');
+
+
+
+
+	document.addEventListener('click', function(event) {
+		if (event.target.classList.contains('trigger-qr')) {
+			modalQrCon.classList.remove('inactive');
+			modalQrCon.classList.add('active');
+			}
+	});
+
+
+	modalQrCon.addEventListener('click', function(event) {
+				if (event.target === modalQrCon) {
+								modalQrCon.classList.remove('active');
+					modalQrCon.classList.add('inactive');
+		
+				}
+		});
+	});
+
+
+
+
+
+document.querySelector('.qr-t').addEventListenerAll('click', function() {
+	const qrContainer = document.querySelector('.modal_qr-con');
+
+	const tgContent = `
+			<div class="modal_qr">
+					<div class="modal_qr-close-con">
+							<img class="modal_qr-close" src="" alt="">
+					</div>
+					<div class="qr-img-con">
+							<img class="qr-img" src="/assets/svg/qr-t.svg" alt="">
+							<div>
+									<img src="/assets/svg/tg.svg" alt="">
+									<a href="https://t.me/Nadludi" target="_blank"><button class="btn">перейти</button></a>
+							</div>
+					</div>
+			</div>`;
+
+	qrContainer.innerHTML = tgContent;
+});
+
+
+
+document.querySelector('.qr-w').addEventListenerAll('click', function() {
+	const qrContainer = document.querySelector('.modal_qr-con');
+
+	const wContent = `
+		<div class="modal_qr">
+			<div class="modal_qr-close-con">
+				<img class="modal_qr-close" src="" alt="">
+			</div>
+			<div class="qr-img-con">
+				<img class="qr-img" src="/assets/svg/qr-w.svg" alt="">
+				<div>
+					<img src="/assets/svg/wapp.svg" alt="">
+					<a href="https://api.whatsapp.com/send/?phone=79776640495&text&type=phone_number&app_absent=0" target="_blank"><button class="btn">перейти</button></a>
+				</div>
+			</div>
+		</div>
+	`;
+
+	qrContainer.innerHTML = wContent;
+});
+
+
+
+

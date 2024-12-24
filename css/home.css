@@ -1,15 +1,14 @@
 .title-con{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: start;
 	height: 100vh;
-	max-height: 1000px;
+	max-height: 930px;
 	width: 100%;
 	padding: 5% 0 0 0;
 }
 .title{
-	width: 65%;
-	padding: 0 0 0 10%;
+	width: 48%;
 	line-height: 1.6;
 }
 .title-img{
@@ -18,39 +17,51 @@
 	display: flex;
 	align-items: flex-end;
 } 
+.title-con-home{
+	justify-content: end;
+}
+.title-home{
+	width: 55%;
+}
+.h1-main{
+	font-size: var(--title-main);
+}
+
+.title h2{
+	font-size: 20px;
+	margin:10% 0;
+	width: fit-content;
+}
+
+
 .title-con .mob-btn{
 	display: none;
 }
 .title-con .desc-btn{
 	display: flex;
 }
-.title-img img{
-	position: relative;
-	width: auto;
-	height: 750px;
-	z-index: 2;
-} 
+.title-img img {
+  position: relative;
+  width: auto;
+  max-height: 750px;
+  z-index: 2;
+  height: 90%;
+}
+
 .title-img .back{
 	position: absolute;
-	filter: blur(27px);
+	filter: blur(25px);
+	max-height: 650px;
 	z-index: 1;
-	opacity: 0.3;
+	opacity: 0.25;
 } 
+
 .title h1{
 	font-size: var(--title);
 	font-weight: 400;
 	line-height: 1.4;
 	margin-top: 10%;
-
 }
-.title h2{
-	font-size: var(--h2);
-	color: var(--gray);
-	font-weight: 400;
-	margin: 5% 0 8% 0;
-}
-
-
 
 
 .way-con {
@@ -129,7 +140,7 @@
 	font-weight: 400;
 	margin-top: 50px;
 	cursor: pointer;
-	font-size: clamp(10px, 2.5vw, 40px);
+	font-size: 40px;
 	line-height: 1.2;
 	transition: all 1s ease-in-out;
 	width: 100%;
@@ -181,17 +192,22 @@
 	opacity: 0;
 }
 
-
+.title-card{
+	font-size: 30px;
+}
 .way:hover .way-text {
 	transform: translateY(-60px);
 	transition: all 1s ease-in-out;
 }
 .way-text {
-	transform: translateY(50px);
+	transform: translateY(100px);
 	transition: all 1s ease-in-out;
 	cursor: pointer;
 	width: 70%;
 }
+
+
+
 @media (max-width: 1600px) {
 .way h2 {
 
@@ -199,6 +215,7 @@
 
 }
 }
+
 @media (max-width: 600px) {
 
 	.way-con {
@@ -211,7 +228,9 @@
 	.title-img{
 		position: absolute;
 		top: 0;
+		left: 0;
 	}
+
 
 	.title{
 		width: 100%;
@@ -229,16 +248,23 @@
 	.title-img img {
 		position: absolute;
 		height: 60vh;
-		transform: translate(50%, 0%);
+		/* transform: translate(50%, 15%); */
 	}
-	.title-img-non img{
-		position: absolute;
-		height: 55vh;
-		transform: translate(55%, 0%);
+
+	.liq-t-img, .liq-back{
+		transform: translate(50%, 15%);
 	}
-	.title-img .back {
-    left: 0;
-}
+	.buy-t-img, .buy-back{
+		transform: translate(30%, 15%);
+	}
+	.cell-t-img, .cell-back{
+		transform: translate(60%, 5%);
+	}
+	.home-img, .home-back{
+		transform: translate(45%, 0%);
+	}
+
+
 	.way h1 {
 		font-weight: 400;
 		margin-top: 20px;

@@ -23,8 +23,8 @@
 				<button class="btn trigger desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img src="/assets/img/liq-main.webp" alt="">
-				<img class="back" src="/assets/img/liq-main.webp" alt="">
+				<img class="liq-t-img" src="/assets/img/liq-main.png" alt="">
+				<img class="liq-back" src="/assets/img/liq-main.png" alt="">
 			</div>
 
 			
@@ -37,14 +37,14 @@
 				<h1>Добро пожаловать в компанию «Надёжные Люди».</h1><br>
 				<h2><span>Ваш партнер по ликвидации ООО и юридических лиц в Москве.</span><br>
 				Если вы ищете профессиональную компанию, которая поможет вам с ликвидацией вашего ООО, юридического лица или фирмы в Москве, то вы обратились по адресу. Компания «Надежные Люди» имеет богатый опыт и экспертизу в сфере ликвидаций и предлагает полный спектр услуг для успешного завершения этого процесса.
-</h2>
+		</h2>
 			</div>
 
 			
 
 			<div class="block_2 block-img">
 
-				<img src="/assets/img/block_2.png" alt="">
+				<img src="/assets/img/cell_b-1.png" alt="">
 
 				<div class="text-con">
 					<h1>Все сделаем сами — под ключ!</h1><br>

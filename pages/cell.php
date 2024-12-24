@@ -11,7 +11,8 @@
 		<div class="title-con">
 			<div class="title-buy title">
 				<h1>
-				Купим или продадим вашу фирму<br> 
+				Купим или продадим<br>
+				 вашу фирму<br> 
 				быстро и без последствий
 				</h1>
 
@@ -23,8 +24,8 @@
 				<button class="btn trigger desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img src="/assets/img/cell-main.webp" alt="">
-				<img class="back" src="/assets/img/cell-main.webp" alt="">
+				<img class="cell-t-img" src="/assets/img/cell-main.png" alt="">
+				<img class="cell-back" src="/assets/img/cell-main.png" alt="">
 			</div>
 
 			

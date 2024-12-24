@@ -23,8 +23,8 @@
 				<button class="btn trigger desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img src="/assets/img/david.webp" alt="">
-				<img class="back" src="/assets/img/david.webp" alt="">
+				<img class="buy-t-img" src="/assets/img/david.png" alt="">
+				<img class="buy-back" src="/assets/img/david.png" alt="">
 			</div>
 
 			
@@ -269,7 +269,7 @@
 				<div class="card-title">
 					<div>
 						<h1>Каталог фирм</h1>
-						<h2>Более тысячи предложений</h2>
+						<!-- <h2>Более тысячи предложений</h2> -->
 					</div>
 					<a href="/pages/catalog.php"><button class="btn">смотреть всё</button></a>
 				</div>
@@ -278,7 +278,7 @@
 
 					<div class="card-content">
 						<div class="card">
-							<h1>ООО Авангард</h1>
+							<h1 class="title-card">ООО Авангард</h1>
 							<h2>Московская область | 2017</h2>
 							<h2>Выручка:<br>
 								<span>2024 - 0 млн. ₽</span><br>
