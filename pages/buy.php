@@ -1,11 +1,17 @@
+    <?php
+    /*
+    Template Name: купить-фирму
+    */
+    ?>
+
 <!DOCTYPE html>
 <html lang="ru">
-<?php include "../components/head.php"?>
+    <?php get_template_part('components/head'); ?>
 <title>НЛ | Купить фирму</title>
 
 <body>
-	<?php include "../components/header.php"?>
-	<?php include "../components/modal.php"?>
+    <?php get_template_part('components/header'); ?>
+    <?php get_template_part('components/modal'); ?>
 	<div class="container">
 
 		<div class="title-con">
@@ -19,12 +25,12 @@
 					- Все фирмы проходят тщательную проверку<br><br>
 					- В наличии более 1000 фирм
 				</h2>
-				<button class="btn trigger mob-btn">консультация</button>
-				<button class="btn trigger desc-btn">бесплатная консультация</button>
+				<button class="btn trigger btn-form mob-btn">консультация</button>
+				<button class="btn trigger btn-form desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img class="buy-t-img" src="/assets/img/david.png" alt="">
-				<img class="buy-back" src="/assets/img/david.png" alt="">
+				<img class="buy-t-img" src="/wp-content/themes/nadezhnye-lyudi/assets/img/david-main.webp" alt="">
+				<img class="buy-back back" src="/wp-content/themes/nadezhnye-lyudi/assets/img/david-main.webp" alt="">
 			</div>
 
 			
@@ -41,7 +47,7 @@
 
 			<div class="block_2 block-img">
 			
-				<img src="/assets/img/block_2.png" alt="">
+				<img src="/wp-content/themes/nadezhnye-lyudi/assets/img/block_2.png" alt="">
 		
 				
 				<div class="text-con">
@@ -160,7 +166,7 @@
 						<div class="comment-star">
 							<h1>4.7</h1>
 							<div >
-								<img src="/assets/svg/star.svg" alt="">
+								<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/star.svg" alt="">
 								<h2>12 отзывов</h2>
 							</div>
 						</div>
@@ -181,10 +187,10 @@
 
 				<div class="next-prev-con">
 					<button class="btn-prev">
-						<img src="/assets/svg/prev.svg" alt="">
+						<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/prev.svg" alt="">
 					</button>
 					<button class="btn-next">
-						<img src="/assets/svg/next.svg" alt="">
+						<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/next.svg" alt="">
 					</button>
 				</div>
 
@@ -271,7 +277,7 @@
 						<h1>Каталог фирм</h1>
 						<!-- <h2>Более тысячи предложений</h2> -->
 					</div>
-					<a href="/pages/catalog.php"><button class="btn">смотреть всё</button></a>
+					<a href="/каталог-фирм/"><button class="btn">смотреть всё</button></a>
 				</div>
 				
 				<div class="card-con">
@@ -285,10 +291,10 @@
 								<span>2023 – 1.7 млн. ₽</span><br>
 								<span>2022 – 5.7 млн. ₽</span>
 							</h2>
-							<h2>УСН: <span>6%</span></h2>
+							<h2>Налог: <span>УСН 6%</span></h2>
 							<h2>Р/сч: <span>Альфа</span></h2>
 							<h2>ОКВЭДы: <span>Строительство</span></h2>
-							<button  class="btn trigger">заказать</button>
+							<button  class="btn btn-form trigger">заказать</button>
 						</div>
 						
 					</div>
@@ -303,7 +309,7 @@
 								<!-- <div class="swiper-slide card-slide">
 
 									<div class="c-btn">
-											<img src="/assets/svg/logo-mini.svg" alt="">
+											<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/logo-mini.svg" alt="">
 											<div class="c-title">
 												<h1 class="card-name">ООО Авангард</h1>
 												<h2 class="card-location">Московская область | 2017</h2>
@@ -327,11 +333,11 @@
 
 					<div class="card-next-prev-con">
 						<button class="card-btn-prev">
-							<img src="/assets/svg/prev.svg" alt="">
+							<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/prev.svg" alt="">
 						</button>
-						<h2 id="pagination-number">1/3</h2>
+						<h2 id="pagination-number">1/11</h2>
 						<button class="card-btn-next">
-							<img src="/assets/svg/next.svg" alt="">
+							<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/next.svg" alt="">
 						</button>
 					</div>
 
@@ -352,7 +358,7 @@
 
 			</div>
 
-			<?php include "../components/footer.php"?>
+			    <?php get_template_part('components/footer'); ?>
 
 
 

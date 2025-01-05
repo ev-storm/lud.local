@@ -41,7 +41,7 @@ try {
 	$mail->setFrom('insight.studio2023@gmail.com', 'Надёжные Люди'); // Адрес самой почты и имя отправителя
 
 	// Получатель письма
-	$mail->addAddress('insight.studio2023@gmail.com');
+	$mail->addAddress('info@nadezhnye-lyudi.ru');
 
 	// Прикрипление файлов к письму
 	if (!empty($file['name'][0])) {

@@ -1,0 +1,401 @@
+.title-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	width: 100%;
+	height: 100vh;
+	max-height: 930px;
+	padding: 5% 5% 0 10%;
+}
+.title{
+	transform: translateY(50%);
+	opacity: 0;
+	width: 100%;
+	transition: all 1s ease-in-out;
+	line-height: 1.6;
+}
+.title.show{
+	transform: translateX(0%);
+	opacity: 1;
+	width: 100%;
+	transition: all 1s ease-in-out;
+	line-height: 1.6;
+}
+.title-img{
+	transform: translateX(10%);
+	opacity: 0;
+	transition: all 2s ease-in-out;
+}
+.title-img.show{
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 2s ease-in-out;
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.h1-main{
+	font-size: var(--title-main);
+}
+
+.title h2{
+	font-size: 20px;
+	margin:9vh 0;
+	width: fit-content;
+}
+
+
+.title-con .mob-btn{
+	display: none;
+}
+.title-con .desc-btn{
+	display: flex;
+}
+.title-img img {
+  position: relative;
+  width: auto;
+  z-index: 2;
+  height: 100%;
+}
+
+.title-img .back{
+	position: absolute;
+	filter: blur(25px);
+	z-index: 1;
+	width: auto;
+	height: 90%;
+	opacity: 0.5;
+} 
+
+.title h1{
+	font-size: var(--title);
+	font-weight: 400;
+	line-height: 1.4;
+	margin-top: 10%;
+}
+
+
+.way-con {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	transition: all 0.5s ease-in-out;
+	z-index: 2;
+}
+
+.way {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+
+}
+
+.way.active{
+	flex: 4;
+	transition: all 0.5s ease-in-out;
+}
+
+/* .way-con.active {
+	flex: 3;
+	transition: all 0.5s ease-in-out;
+} */
+
+.buy, .cell, .liq {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	transition: var(--tran_05);
+}
+
+.buy::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/buy.png);
+}
+
+.cell::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/cell.png);
+}
+
+.liq::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/liq.png);
+}
+
+.way::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	filter: brightness(40%);
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+
+.way.active::before {
+	filter: brightness(15%);
+}
+
+.way h1 {
+	display: flex;
+	justify-content: center;
+	font-weight: 400;
+	margin-top: 50px;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 1.2;
+	transition: all 1s ease-in-out;
+	width: 100%;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+
+.way h2, .way h3 {
+	font-weight: 400;
+	font-size: var(--h2);
+	color: var(--gray);
+	opacity: 0;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+
+.way h2 {
+	margin-top: 5%;
+	width: 500px;
+	max-width: 500px;
+	min-width: 300px;
+	line-height: 1.8;
+	font-weight: 500;
+	margin-top: 10%;
+}
+
+.way a h3 {
+	margin-top: 20px;
+	transition: all 0.2s;
+}
+
+/* .way.active a h3 {
+	color: #ffffff;
+} */
+
+.way.active .way-text{
+	transform: translateY(-60px);
+	transition: all 1s ease-in-out;
+}
+.way.active h2, .way.active h3 {
+	opacity: 1;
+}
+
+.way img {
+	opacity: 1;
+	transition: all 1s ease-in-out;
+	margin: 50px 20px 0 0;
+	width: 100px;
+}
+.way-text div {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+.way.active img {
+	opacity: 0;
+}
+
+.title-card{
+	font-size: 30px;
+}
+.way.active .way-text {
+	transform: translateY(-60px);
+	transition: all 1s ease-in-out;
+}
+
+.way-text {
+	transform: translateY(100px);
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+	width: 70%;
+}
+
+
+.just-validate-error-label{
+	color: #ff9090 !important;
+	text-align: end;
+}
+
+
+
+@media (max-width: 1600px) {
+.way h2 {
+
+	width: 400px;
+
+}
+}
+
+
+@media (max-width: 600px) {
+
+	.way-con {
+		flex-direction: column;
+		height: 800px;
+	}
+	.way-text {
+		margin-top: 20%;
+		width: 100%;
+	}
+	.way-text div{
+		flex-direction: row; 
+	}
+	.title-img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.way img {
+		width: 50px;
+		margin: 0;
+	}
+	.way.active img {
+		opacity: 1;
+	}
+
+	.title {
+		width: 100%;
+		padding: 0 0 0 10%;
+		z-index: 99;
+		height: 80vh;
+		display: flex;
+		flex-direction: column;
+		justify-content:space-evenly;
+	}
+
+	.mob-btn{
+		margin-bottom: 21%;
+		width: fit-content;
+	}
+	
+	.title h1 {
+		width: 100%;
+		font-size: 40px;
+	}
+	.title h2 {
+		width: 100%;
+		margin-top: 10%;
+		font-size: 17px;
+	}
+	.way h2 {
+    margin-top: 15%;
+    width: 300px;
+}
+.title-img.show{
+	z-index: 1;
+	opacity: 0.3;
+	position: relative;
+	transform: translateY(-70%);
+}
+.title-img img {
+	position: absolute;
+	height: 60vh;
+	bottom: 0;
+
+}
+
+/* .title-img .home-img {
+	height: 55vh;
+} */
+
+
+.title-img .back {
+	display: none;
+}
+
+	.liq-t-img, .liq-back{
+		transform: translate(30%, 25%);
+	}
+	.buy-t-img, .buy-back{
+		transform: translate(10%, 15%);
+	}
+	.cell-t-img, .cell-back{
+		transform: translate(30%, 25%);
+	}
+	.home-img, .home-back{
+		transform: translate(10%, 23%);
+	}
+
+
+.way h1 {
+	font-weight: 400;
+	margin-top: 20px;
+	font-size: clamp(30px, 2.5vw, 40px);
+	line-height: 1.2;
+	text-align: start;
+	align-items: center;
+	margin: 0;
+}
+.way {
+	flex: 1;
+	padding: 10%;
+}
+
+.way.active {
+	flex:4;
+}
+
+.title-con .mob-btn{
+	display: flex;
+	position: relative;
+	z-index: 99;
+}
+.title-con .desc-btn{
+	display: none;
+}
+.mob-paragraph{
+	display: none;
+}
+.list-item{
+	display: flex;
+}
+.title-con{
+	padding: 20% 0 0 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.block_8 h1{
+	font-size: 30px;
+}
+
+
+.buy::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/buy.webp);
+}
+
+.cell::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/cell.webp);
+}
+
+.liq::before {
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/liq.webp);
+}
+
+
+
+
+
+}

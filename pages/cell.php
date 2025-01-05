@@ -1,11 +1,18 @@
+    <?php
+    /*
+    Template Name: продать-фирму
+    */
+    ?>
+
 <!DOCTYPE html>
 <html lang="ru">
-<?php include "../components/head.php"?>
+    <?php get_template_part('components/head'); ?>
+
 <title>НЛ | Продать фирму</title>
 
 <body>
-	<?php include "../components/header.php"?>
-	<?php include "../components/modal.php"?>
+    <?php get_template_part('components/header'); ?>
+    <?php get_template_part('components/modal'); ?>
 	<div class="container">
 
 		<div class="title-con">
@@ -20,12 +27,12 @@
 				- Вы ни за что не платите,  мы заплатим вам<br>
 				- Вы больше не будете нести расходы по обслуживанию фирмы<br><br>
 				</h2>
-				<button class="btn trigger mob-btn">консультация</button>
-				<button class="btn trigger desc-btn">бесплатная консультация</button>
+				<button class="btn trigger btn-form mob-btn">консультация</button>
+				<button class="btn trigger btn-form desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img class="cell-t-img" src="/assets/img/cell-main.png" alt="">
-				<img class="cell-back" src="/assets/img/cell-main.png" alt="">
+				<img class="cell-t-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/cell-main.webp" alt="">
+				<img class="cell-back back" src="<?php echo get_template_directory_uri(); ?>/assets/img/cell-main.webp" alt="">
 			</div>
 
 			
@@ -45,7 +52,7 @@
 
 			<div class="block_2 block-img">
 
-				<img src="/assets/img/my_way.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/my_way.png" alt="">
 
 				<div class="text-con">
 					<h1 class="text-upper">верный путь</h1><br>
@@ -53,7 +60,7 @@
 					Продать фирму гораздо проще и выгоднее, чем ее ликвидировать. Зачем платить юристу за закрытие фирмы, когда вы можете получить деньги за продажу ООО.<br>
 					Наши услуги бесплатны. Мы проведем полную подготовку и сопровождение сделки у нотариуса.	<br><br><br>
 					</h2>
-					<button class="btn trigger">оставить заявку</button>
+					<button class="btn btn-form trigger">оставить заявку</button>
 				</div>
 
 			</div>
@@ -172,7 +179,7 @@
 					<div class="comment-star">
 						<h1>4.7</h1>
 						<div >
-							<img src="/assets/svg/star.svg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/star.svg" alt="">
 							<h2>12 отзывов</h2>
 						</div>
 					</div>
@@ -193,10 +200,10 @@
 
 			<div class="next-prev-con">
 				<button class="btn-prev">
-					<img src="/assets/svg/prev.svg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/prev.svg" alt="">
 				</button>
 				<button class="btn-next">
-					<img src="/assets/svg/next.svg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/next.svg" alt="">
 				</button>
 			</div>
 
@@ -264,14 +271,14 @@
 
 		<div class="block_2 block_7-liq block-img">
 
-			<img src="/assets/img/hummer.png" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/hummer.png" alt="">
 
 			<div class="text-con">
 				<h1 class="text-upper">процедура продажи</h1><br>
 				<h2>
 				Сделка происходит с обязательной сменой учредителя и директора унотариуса — <br>строго по Федеральному закону ФЗ-14<br><br><br>
 				</h2>
-				<button class="btn trigger">подробнее</button>
+				<button class="btn btn-form trigger">подробнее</button>
 			</div>
 
 		</div>
@@ -286,7 +293,8 @@
 
 		</div>
 
-		<?php include "../components/footer.php"?>
+
+		    <?php get_template_part('components/footer'); ?>
 
 
 

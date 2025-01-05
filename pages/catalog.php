@@ -1,11 +1,18 @@
+    <?php
+    /*
+    Template Name: каталог-фирм
+    */
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="ru">
-<?php include "../components/head.php"?>
+    <?php get_template_part('components/head'); ?>
 <title>НЛ | Каталог фирм</title>
 
 <body>
-	<?php include "../components/header.php"?>
-	<?php include "../components/modal.php"?>
+    <?php get_template_part('components/header'); ?>
+    <?php get_template_part('components/modal'); ?>
 	<div class="container">
 		<div class="catalog-title">
 			<div class="catalog-title_l1">
@@ -52,7 +59,7 @@
 					</div>
 				</div>
 				<div class="card-cat-btn">
-					<h2 class=" trigger">заявка на консультацию</h2>
+					<h2 class=" trigger btn-form">заявка на консультацию</h2>
 					<button  class="btn trigger">заказать</button>
 				</div>
 			</div> -->
@@ -75,8 +82,8 @@
 
 
 
-
-		<?php include "../components/footer.php"?>
+    <?php get_template_part('components/footer'); ?>
+		
 
 	</div>
 </body>

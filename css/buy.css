@@ -211,7 +211,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-image: url(/assets/img/card-back.svg);
+	background-image: url(/wp-content/themes/nadezhnye-lyudi/assets/img/card-back.svg);
 	background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +281,8 @@
 
 .c-btn{
 	display: flex;
-	width: 400px;
+	width: 380px;
+	height:100px;
 	background-color: #ffffff10;
 	border-radius: 10px;
 	padding: 20px 40px 15px 40px;
@@ -304,6 +305,12 @@
 	width: 50px;
 	margin-right: 10px;
 	cursor: pointer;
+}
+.c-title {
+	display:flex;
+	flex-direction: column;
+    justify-content: center;
+	
 }
 .c-title h1{
 	font-size: var(--h11);
@@ -328,11 +335,7 @@
 	display: flex!important;
 	flex-wrap: wrap;
 }
-.c-btn{
-	max-width: 350px;
-	min-width: 300px;
-	height: fit-content;
-}
+
 
 
 

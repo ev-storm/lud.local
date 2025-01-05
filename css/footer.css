@@ -44,7 +44,7 @@
 }
 .footer-btn {
 	display: flex;
-	width: 260px;
+	width: 220px;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -54,7 +54,7 @@
 	opacity: 0.5;
 	cursor: pointer;
 	transition: var(--tran_03);
-	width: 30px;
+	width: 25px;
 }
 .footer-btn img:hover{
 	opacity: 1;
@@ -77,16 +77,16 @@
 	transition: var(--tran_05);
 } */
 
-.fi{
+/* .fi{
 	opacity: 0;
 	transform: translateY(10px);
 	transition: var(--tran_05);
-}
-.footer:hover .fi{
+} */
+/* .footer:hover .fi{
 	opacity: 1;
 	transform: translateY(0px);
 	transition: var(--tran_05);
-}
+} */
 /* .modal_qr h1{
 	font-size: 70px;
 } */

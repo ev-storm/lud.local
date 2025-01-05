@@ -104,15 +104,15 @@
 }
 
 .buy::before {
-	background-image: url(/assets/img/buy.png);
+	background-image: url(/wp-content/uploads/2024/12/buy.png);
 }
 
 .cell::before {
-	background-image: url(/assets/img/cell.png);
+	background-image: url(/wp-content/uploads/2024/12/cell.png);
 }
 
 .liq::before {
-	background-image: url(/assets/img/liq.png);
+	background-image: url(/wp-content/uploads/2024/12/liq.png);
 }
 
 .way::before {
@@ -252,7 +252,7 @@
 	}
 
 	.liq-t-img, .liq-back{
-		transform: translate(50%, 15%);
+		transform: translate(50%, 0%);
 	}
 	.buy-t-img, .buy-back{
 		transform: translate(30%, 15%);

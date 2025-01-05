@@ -18,13 +18,14 @@
 	padding: 30px 50px 0px 50px;
 	z-index: 99;
 	transition: var(--tran_05);
-	backdrop-filter: blur(7px);
+	backdrop-filter: blur(15px);
+	background-color: #00000090;
 }
-.menu:hover{
+/* .menu:hover{
 	background-color: #00000070;
 	backdrop-filter: blur(10px);
 	transition: var(--tran_05);
-}
+} */
 
 .menu .logo img{
 	cursor: pointer;
@@ -44,9 +45,11 @@
 	width: 22px;
 }
 .menu-btn .cont-btn a img{
-	width: 22px;
-	transition: var(--tran_03);
-	cursor: pointer;
+    margin: 0 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: var(--tran_03);
+    width: 30px;
 }
 .menu-btn .cont-btn a:hover img{
 	width: 20px;

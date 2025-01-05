@@ -1,17 +1,23 @@
+    <?php
+    /*
+    Template Name: политика-конфиденциальности
+    */
+    ?>
+
 <!DOCTYPE html>
 <html lang="ru">
-<?php include "../components/head.php"?>
+    <?php get_template_part('components/head'); ?>
 <title>НЛ | Политика конфиденциальности</title>
 
 <body>
-	<?php include "../components/header.php"?>
-	<?php include "../components/modal.php"?>
+    <?php get_template_part('components/header'); ?>
+    <?php get_template_part('components/modal'); ?>
 	<div class="container assent-con">
 
 
 		<div>
 			<h1>Политика конфиденциальности</h1>
-			<a href="/assets/img/assent.pdf" target="_blank"><button class="btn">скачать PDF</button></a>
+			<a href="<?php echo get_template_directory_uri(); ?>/assets/img/assent.pdf" target="_blank"><button class="btn">скачать PDF</button></a>
 		</div>
 		
 		<div class="assent-text">
@@ -32,6 +38,7 @@
 			2.7. При размещении новой редакции Политики конфиденциальности на Сайте, предыдущая редакция хранятся в архиве документации Администрации Сайта.<br><br>
 			2.8. Используя Форму обратной связи, Пользователь выражает свое согласие с условиями настоящей Политики конфиденциальности.<br><br>
 			2.9. Администрация Сайта не проверяет достоверность получаемой (собираемой) информации о Пользователе.<br><br><br>
+			
 
 			<span>3. УСЛОВИЯ И ЦЕЛИ СБОРА И ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ ПОЛЬЗОВАТЕЛЕЙ</span><br><br>
 			3.1. Персональные данные Пользователя такие как: имя, фамилия, отчество, e-mail, телефон и др., передаются Пользователем  Администрации Сайта с согласия Пользователя.<br><br>
@@ -81,7 +88,7 @@
 			</h2>
 		</div>
 
-
+    <?php get_template_part('components/footer'); ?>
 
 	</div>
 </body>

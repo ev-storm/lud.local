@@ -1,12 +1,22 @@
+    <?php
+    /*
+    Template Name: ликвидировать-фирму
+    */
+    ?>
+
+    
 <!DOCTYPE html>
 <html lang="ru">
-<?php include "../components/head.php"?>
+    <?php get_template_part('components/head'); ?>
+
 <title>НЛ | Ликвидировать фирму</title>
 
 <body>
-	<?php include "../components/header.php"?>
-	<?php include "../components/modal.php"?>
-	<div class="container">
+    
+    <?php get_template_part('components/header'); ?>
+    <?php get_template_part('components/modal'); ?>
+
+    <div class="container">
 
 		<div class="title-con">
 			<div class="title-buy title">
@@ -19,12 +29,12 @@
 					Мы докажем, что это не так!<br>
 					Доверьтесь нам и получите 100% результат.<br><br>
 				</h2>
-				<button class="btn trigger mob-btn">консультация</button>
-				<button class="btn trigger desc-btn">бесплатная консультация</button>
+				<button class="btn trigger btn-form mob-btn">консультация</button>
+				<button class="btn trigger btn-form desc-btn">бесплатная консультация</button>
 			</div>
 			<div class="title-img title-img-non">
-				<img class="liq-t-img" src="/assets/img/liq-main.png" alt="">
-				<img class="liq-back" src="/assets/img/liq-main.png" alt="">
+				<img class="liq-t-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/liq-main.webp" alt="">
+				<img class="liq-back back" src="<?php echo get_template_directory_uri(); ?>/assets/img/liq-main.webp" alt="">
 			</div>
 
 			
@@ -44,7 +54,7 @@
 
 			<div class="block_2 block-img">
 
-				<img src="/assets/img/cell_b-1.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/cell_b-1.png" alt="">
 
 				<div class="text-con">
 					<h1>Все сделаем сами — под ключ!</h1><br>
@@ -53,7 +63,7 @@
 					Наши юристы подготовят полный пакет всех документов<br> 
 					и проконсультируют относительно дальнейших действий.<br><br><br>
 					</h2>
-					<button class="btn trigger">оставить заявку</button>
+					<button class="btn btn-form trigger">оставить заявку</button>
 				</div>
 
 			</div>
@@ -165,7 +175,7 @@
 						<div class="comment-star">
 							<h1>4.7</h1>
 							<div >
-								<img src="/assets/svg/star.svg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/star.svg" alt="">
 								<h2>12 отзывов</h2>
 							</div>
 						</div>
@@ -186,10 +196,10 @@
 
 				<div class="next-prev-con">
 					<button class="btn-prev">
-						<img src="/assets/svg/prev.svg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/prev.svg" alt="">
 					</button>
 					<button class="btn-next">
-						<img src="/assets/svg/next.svg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/svg/next.svg" alt="">
 					</button>
 				</div>
 
@@ -249,7 +259,7 @@
 
 			<div class="block_2 block_7-liq block-img">
 
-				<img src="/assets/img/roder.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/roder.png" alt="">
 
 				<div class="text-con">
 					<h1 class="text-upper">зачем ликвидировать 
@@ -260,7 +270,7 @@
 						- Вы ни за что не платите,  мы заплатим вам<br>
 						- Вы больше не будете нести расходы по обслуживанию фирмы<br><br><br>
 					</h2>
-					<a href="/pages/buy.php"><button class="btn">подробнее</button></a>
+					<a href="/продать-фирму/"><button class="btn">подробнее</button></a>
 				</div>
 
 			</div>
@@ -274,7 +284,8 @@
 
 			</div>
 
-			<?php include "../components/footer.php"?>
+
+			<?php get_template_part('components/footer'); ?>
 
 
 

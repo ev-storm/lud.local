@@ -1,17 +1,12 @@
-// // const apiKey = 'dfc4a4de-31d2-40a7-9cbd-93f2d0ed7cb3';
-// // const searchQuery = 'Надежные люди Продажа готового бизнеса и франшиз';
-// // const longitude = 37.620393;
-// // const latitude = 55.75396;
-// // const url = `https://search-maps.yandex.ru/v1/?text=${encodeURIComponent(searchQuery)}&ll=${longitude},${latitude}&spn=0.552069,0.400552&lang=ru_RU&apikey=${apiKey}`;
 
-// // fetch(url)
-// //   .then(response => response.json())
-// //   .then(data => {
-// //     console.log('Организации:', data.features);
-// //   })
-// //   .catch(error => {
-// //     console.error('Ошибка:', error);
-// //   });
+
+// if (window.location.href.includes("/pages/buy.php")) {
+
+
+
+
+
+
 
 
 async function loadJSON(filePath) {
@@ -45,7 +40,7 @@ function createCommentCards(commentData) {
 							<div class="date-name">
 									<h1>${person.name}</h1>
 									<h2>${person.date}</h2>
-									<img src="/assets/svg/full-star.svg" alt="Star Rating">
+									<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/full-star.svg" alt="Star Rating">
 							</div>
 					</div>
 					<h2 class="com-content">${person.content}
@@ -105,7 +100,7 @@ window.addEventListener('resize', () => {
 
 
 
-
+//////////////////////////////////////////////////
 
 
 
@@ -139,7 +134,7 @@ function updateCardInfo(company) {
 							<span>${company.proceeds_2}</span><br>
 							<span>${company.proceeds_3}</span>
 			</h2>
-			<h2>УСН: <span>${company.usn}</span></h2>
+			<h2>Налог: <span>${company.nalog}</span></h2>
 			<h2>Р/сч: <span>${company.Rsc}</span></h2>
 			<h2>ОКВЭДы: <span>${company.OKVD}</span></h2>
 			<button data="${company.name}" class="btn trigger card-btn">заказать</button>
@@ -149,8 +144,9 @@ function updateCardInfo(company) {
 
 async function init() {
 
-	const commentData = await loadJSON('/js/comments.json');
-	const companyData = await loadJSON('/js/card.json');
+    const commentData = await loadJSON('/wp-content/themes/nadezhnye-lyudi/js/comments.json');
+    const companyData = await loadJSON('/wp-content/themes/nadezhnye-lyudi/js/card.json');
+
 
 	if (commentData) {
 			createCommentCards(commentData);
@@ -219,7 +215,7 @@ function createCompanyButton(company) {
 	const button = document.createElement('div');
 	button.className = 'c-btn';
 	button.innerHTML = `
-			<img src="/assets/svg/logo-mini.svg" alt="">
+			<img src="/wp-content/themes/nadezhnye-lyudi/assets/svg/logo-mini.svg" alt="">
 			<div class="c-title">
 					<h1 class="card-name">${company.name}</h1>
 					<h2 class="card-location">${company.location}</h2>
@@ -228,11 +224,7 @@ function createCompanyButton(company) {
 	return button;
 }
 
+ document.addEventListener('DOMContentLoaded', init);
 
 
-
-document.addEventListener('DOMContentLoaded', init);
-
-
-
-
+// }
